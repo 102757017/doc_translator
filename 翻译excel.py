@@ -18,7 +18,8 @@ os.chdir(bundle_dir)
 print(ts.translators_pool)
 
 app = xls.App(visible=True,add_book=False)
-file_path="orgin.xlsx"
+#要翻译的文档
+file_path="QAV-1.xlsx"
 workbook=app.books.open(file_path)
 for sht in app.books[file_path].sheets:
     max_row=sht.used_range.rows.count
